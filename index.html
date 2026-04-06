@@ -469,6 +469,76 @@ img {
 }
 
 /* ========================
+   Letter / Founder Message
+   ======================== */
+.letter {
+  background: linear-gradient(180deg, #fffaf8 0%, #fff 100%);
+}
+
+.letter-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 20px;
+  padding: 48px 32px 44px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.06);
+  border: 1px solid #f0e8e4;
+  position: relative;
+}
+
+.letter-inner::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #E8856C;
+  border-radius: 2px;
+  margin: 0 auto 32px;
+}
+
+.letter-heading {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #3a3a3a;
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
+.letter-body {
+  font-size: 15px;
+  line-height: 2.15;
+  color: #555;
+  text-align: left;
+}
+
+.letter-body p {
+  margin-bottom: 24px;
+}
+
+.letter-body p:last-child {
+  margin-bottom: 0;
+}
+
+.letter-sign {
+  text-align: right;
+  font-size: 15px;
+  font-weight: 500;
+  color: #999;
+  margin-top: 36px;
+}
+
+@media (max-width: 599px) {
+  .letter-inner {
+    padding: 36px 22px 32px;
+  }
+
+  .letter-heading {
+    font-size: 19px;
+  }
+}
+
+/* ========================
    Footer
    ======================== */
 .footer {
@@ -725,7 +795,6 @@ img {
 <section class="section bg-pink" id="sec-retire">
   <div class="section-inner">
     <h2 class="section-heading fade-in">退職サポート</h2>
-    <p class="section-subheading fade-in delay-1">安心して、次のステップへ。</p>
     <img src="4.jpg" alt="退職サポート" class="section-img fade-in-left">
     <p class="section-text fade-in delay-2">
       退職の手続きや届出をプロがサポート。<br>
@@ -739,7 +808,6 @@ img {
 <section class="section bg-mint" id="sec-learn">
   <div class="section-inner">
     <h2 class="section-heading fade-in">学習サポート</h2>
-    <p class="section-subheading fade-in delay-1">学びながら、毎月3万円。</p>
     <img src="5.jpg" alt="学習サポート" class="section-img fade-in-right">
     <p class="section-text fade-in delay-2">
       教材費・交通費として毎月3万円を支給。<br>
@@ -767,7 +835,6 @@ img {
 <section class="section bg-purple" id="sec-skill">
   <div class="section-inner">
     <h2 class="section-heading fade-in">スキルアップサポート</h2>
-    <p class="section-subheading fade-in delay-1">AIスキルで、市場価値を上げる。</p>
     <img src="7.jpg" alt="スキルアップサポート" class="section-img fade-in-right">
     <p class="section-text fade-in delay-2">
       AI・DXのリスキリングプログラムを受講可能。<br>
@@ -819,6 +886,45 @@ img {
 <section class="section final-cta" id="contact">
   <div class="section-inner">
     <img src="9.jpg" alt="キャリサポで新しい一歩を" class="section-img fade-in-scale">
+  </div>
+</section>
+
+<!-- Founder Letter -->
+<section class="section letter">
+  <div class="section-inner">
+    <div class="letter-inner fade-in">
+      <h2 class="letter-heading">このサポートに込めた思い</h2>
+      <div class="letter-body">
+        <p>老後2,000万円問題、年金の不安、少子高齢化——。<br>ニュースを開けば、将来への不安をかき立てる話題ばかりが目に飛び込んできます。<br>「このままでいいのだろうか」と、心のどこかで感じている方は少なくないはずです。</p>
+
+        <p>人生を変えたい。もっと自分らしく働きたい。<br>そう思っていても、なかなか一歩を踏み出すきっかけがない。<br>それが多くの人のリアルな本音ではないでしょうか。</p>
+
+        <p>貯金がないから、仕事を辞めるのが怖い。<br>辞めたあとの生活が想像できなくて、不安で夜も眠れない。<br>転職したいけど、自分に何が向いているのかわからない。<br>誰に相談すればいいのかもわからない。<br>スキルを身につけたいけど、高額なスクールには通えない。</p>
+
+        <p>こうした悩みは、決して特別なものではありません。<br>私たちのもとに相談に来てくださる方の多くが、まったく同じ壁にぶつかっていました。</p>
+
+        <p>だからこそ、キャリサポを作りました。<br>同じように悩み、立ち止まっている人が「変わるきっかけ」をつかめる場所を作りたい。<br>その一心で、このサポートを立ち上げました。</p>
+
+        <p>仕事は、人生のおよそ3分の1を占めます。<br>1日8時間、週5日。その時間が苦痛やストレスで埋め尽くされていたら、残りの3分の2——家族との時間も、趣味の時間も、休日でさえも、心から楽しめなくなってしまいます。</p>
+
+        <p>逆に、仕事が「今日もがんばろう」と思えるものになったら。<br>朝起きるのが少しだけ楽しみになったら。<br>それだけで、人生全体の景色が変わると、私たちは信じています。</p>
+
+        <p>もちろん、すぐにすべてが変わるわけではありません。<br>でも、「変わりたい」と思ったその気持ちこそが、いちばん大切な第一歩です。</p>
+
+        <p>退職の手続きがわからなくても、大丈夫です。<br>貯金がなくても、大丈夫です。<br>スキルに自信がなくても、大丈夫です。<br>そのすべてを、私たちが一緒に支えます。</p>
+
+        <p>どうか、ひとりで抱え込まないでください。<br>あなたの人生の3分の1が、毎日少しでも楽しみに変わるように。<br>そんな未来を、一緒に見つけにいきませんか。</p>
+
+        <p>勇気を出して連絡してくれた、その一歩に、<br>私たちは全力でお応えします。</p>
+      </div>
+      <p class="letter-sign">—— キャリサポ 一同</p>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="section final-cta">
+  <div class="section-inner">
     <p class="final-cta-copy fade-in">あなたの次のステージへ、<br>一歩踏み出しませんか？</p>
     <a href="#contact" class="cta-btn">無料相談に申し込む</a>
     <p class="final-note fade-in delay-3">※相談は完全無料です。お気軽にお問い合わせください。</p>
