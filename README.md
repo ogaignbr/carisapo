@@ -4,23 +4,23 @@
 
 ## 公開URL（GitHub Pages）
 
-リポジトリで Pages を有効化すると、次のような URL で閲覧できます。
-
 `https://ogaignbr.github.io/carisapo/`
 
-## GitHub での設定（初回のみ）
+## GitHub での設定（初回のみ・この方法がいちばん簡単です）
 
-1. このリポジトリを GitHub で開く: [ogaignbr/carisapo](https://github.com/ogaignbr/carisapo)
-2. **Settings**（設定）→ 左メニュー **Pages**
-3. **Build and deployment** の **Source** で **GitHub Actions** を選択する  
-   （ブランチ指定ではなく、ワークフローでデプロイする方式です）
-4. `main` へプッシュすると、`.github/workflows/pages.yml` が自動実行され、サイトが更新されます
+1. リポジトリを開く: [ogaignbr/carisapo](https://github.com/ogaignbr/carisapo)
+2. **Settings** → 左メニュー **Pages**
+3. **Build and deployment** の **Source** で **Deploy from a branch** を選ぶ
+4. **Branch** は **main**、フォルダは **/ (root)** を選んで **Save**
+
+数分待つと、上記の URL で `index.html` が表示されます。
+
+※ **GitHub Actions は使いません。** Actions が赤くなっていても、上記の「ブランチからデプロイ」にすればサイトは公開できます。
 
 ### うまく表示されないとき
 
-- **Actions** タブでワークフローが成功（緑）になっているか確認してください
-- 初回デプロイ直後は数分かかることがあります
-- 画像はリポジトリ直下の `1.jpg`〜`9.jpg` を参照しています。同じフォルダに置いてプッシュしてください
+- Settings → Pages に **「Your site is live at …」** のような表示が出るまで待つ
+- 画像はリポジトリ直下の `1.jpg`〜`9.jpg` を参照しています
 
 ## ローカルでの確認
 
