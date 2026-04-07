@@ -454,14 +454,7 @@ img {
 }
 
 .letter-inner::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 52px;
-  width: 1px;
-  height: 100%;
-  background: #dbb8a8;
-  opacity: 0.5;
+  display: none;
 }
 
 .letter-heading {
@@ -479,11 +472,15 @@ img {
   font-size: 16px;
   line-height: 2.5;
   color: #4a3f38;
-  text-align: left;
-  padding-left: 24px;
+  text-align: center;
+  padding-left: 0;
 }
 
 .letter-body p {
+  margin-bottom: 20px;
+}
+
+.letter-body p:last-child {
   margin-bottom: 0;
 }
 
@@ -494,6 +491,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 0;
+  text-align: center;
 }
 
 .letter-voice {
@@ -514,6 +512,7 @@ img {
   color: #4a3f38;
   line-height: 2.5;
   margin-bottom: 0;
+  text-align: center;
 }
 
 .letter-hl {
@@ -522,7 +521,7 @@ img {
 }
 
 .letter-sign {
-  text-align: right;
+  text-align: center;
   font-family: 'Zen Kurenaido', sans-serif;
   font-size: 17px;
   font-weight: 400;
@@ -854,28 +853,46 @@ img {
     <div class="letter-inner fade-in">
       <h2 class="letter-heading">あなたへの手紙</h2>
       <div class="letter-body">
-        <p>はじめまして。キャリサポです。</p>
-        <p>この手紙を読んでくださっているあなたは、きっと今、何かを変えたいと感じているのだと思います。</p>
-        <p>老後のお金、年金、将来への漠然とした不安。<br>ニュースを見るたびに焦りばかりが募って、でも何をすればいいかわからない——。<br>そんな毎日を過ごしていませんか。</p>
-        <p>仕事を辞めたいけど、貯金がない。<br>心が疲れて休みたいけど、収入が止まるのが怖い。<br>転職を考えても、誰に相談すればいいかわからない。</p>
-        <p>あなただけではありません。<br>私たちのもとに来てくださる方の多くが、同じ壁の前で立ち止まっていました。</p>
-        <p>キャリサポは、そんな方たちの<span class="letter-hl">変わるきっかけ</span>になりたくて生まれました。</p>
-        <p>仕事は人生のおよそ3分の1。<br>その時間がつらいものであれば、残りの人生にも影を落とします。<br>でも、もし毎朝<span class="letter-hl">今日もがんばろう</span>と思えたなら。<br>それだけで、人生の景色はまるで変わるはずです。</p>
+        <p>はじめまして。<br>キャリサポです。</p>
 
-        <p class="letter-voices-lead">実際に、こんな声が届いています。</p>
+        <p>今このページを<br>見ているあなたは、<br>きっと心のどこかで、</p>
+
+        <p><span class="letter-hl">このままじゃ嫌だ</span><br><span class="letter-hl">でも、どうしたら<br>いいかわからない</span></p>
+
+        <p>そんな気持ちを<br>抱えているのだと思います。</p>
+
+        <p>将来のお金の不安。<br>仕事のつらさ。<br>辞めたいのに<br>辞められない毎日。</p>
+
+        <p>誰かに相談したくても、<br>何を話せばいいか<br>わからない。<br>頑張らなきゃと思うほど、<br>心が苦しくなる。</p>
+
+        <p>そんな時間を、<br>ひとりで抱えてきたの<br>ではないでしょうか。</p>
+
+        <p>私たちキャリサポは、<br>そんな方のためにあります。</p>
+
+        <p>人生は、<br>仕事だけではありません。<br>でも仕事がつらいと、<br>毎日そのものが<br>苦しくなってしまう。</p>
+
+        <p>だからこそ私たちは、<br>ただ転職を<br>支えるだけではなく、<br>あなたがもう一度<br>前を向くための<br>お手伝いをしたいと<br>思っています。</p>
+
+        <p class="letter-voices-lead">実際に、こんな声が<br>届いています。</p>
         <ul class="letter-voices">
-          <li class="letter-voice">——<span class="letter-hl">金曜日よりも、月曜日が楽しみになりました。</span></li>
-          <li class="letter-voice">——<span class="letter-hl">年収が上がって、両親に旅行をプレゼントできました。</span>ありがとうって言われたあの瞬間が、いちばん嬉しかった。</li>
-          <li class="letter-voice">——<span class="letter-hl">仕事を辞めるのは、逃げじゃないよ。</span>その一言に、どれだけ救われたかわかりません。</li>
+          <li class="letter-voice"><span class="letter-hl">相談してよかった</span></li>
+          <li class="letter-voice"><span class="letter-hl">ひとりじゃないと<br>思えた</span></li>
+          <li class="letter-voice"><span class="letter-hl">また頑張ろうと<br>思えた</span></li>
         </ul>
 
-        <p>こうした言葉をいただくたびに、このサポートを作ってよかったと心から思います。</p>
-        <p>すぐにすべてが変わるわけではありません。<br>でも、<span class="letter-hl">変わりたい</span>と思ったその気持ちが、いちばん大切な第一歩です。</p>
-        <p>手続きがわからなくても。貯金がなくても。スキルに自信がなくても。<br>大丈夫です。私たちが一緒に支えます。</p>
-        <p>どうか、ひとりで抱え込まないでください。<br>あなたの人生の3分の1が、少しでも楽しみに変わるように。<br>その未来を、一緒に見つけにいきませんか。</p>
-        <p>勇気を出してくれたその一歩に、全力でお応えします。</p>
+        <p>そう言っていただけることが、<br>私たちの何よりの<br>原動力です。</p>
+
+        <p>大きな勇気が<br>なくても大丈夫です。<br>完璧な準備もいりません。</p>
+
+        <p>必要なのは、<br>少しだけ<span class="letter-hl">変わりたい</span>と<br>思う気持ちだけです。</p>
+
+        <p>その気持ちを、<br>どうか無駄に<br>しないでください。</p>
+
+        <p>あなたのこれからを、<br>一緒に考えさせてください。</p>
+
+        <p>ひとりで悩む時間を、<br>安心できる<br>未来への一歩に。<br>そのために、<br>私たちがいます。</p>
       </div>
-      <p class="letter-sign">—— キャリサポ 一同</p>
+      <p class="letter-sign">キャリサポ 一同</p>
     </div>
   </div>
 </section>
