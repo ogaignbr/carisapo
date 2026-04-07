@@ -20,10 +20,10 @@ html {
 
 body {
   font-family: 'Noto Sans JP', sans-serif;
-  color: #3a3a3a;
+  color: #2d3748;
   line-height: 1.9;
   font-size: 15px;
-  background: #f5efe8;
+  background: #f0f5fa;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -48,7 +48,7 @@ img {
   font-weight: 700;
   margin-bottom: 20px;
   letter-spacing: 0.04em;
-  color: #3a3a3a;
+  color: #1a365d;
 }
 
 .section-img {
@@ -66,18 +66,18 @@ img {
 }
 
 .hl {
-  color: #E8856C;
+  color: #2b6cb0;
   font-weight: 700;
 }
 
 @keyframes ctaBreathe {
   0%, 100% {
     transform: scale(1);
-    box-shadow: 0 6px 22px rgba(232,133,108,0.38);
+    box-shadow: 0 6px 22px rgba(49,130,206,0.35);
   }
   50% {
     transform: scale(1.06);
-    box-shadow: 0 14px 42px rgba(232,133,108,0.58);
+    box-shadow: 0 14px 42px rgba(49,130,206,0.5);
   }
 }
 
@@ -87,7 +87,7 @@ img {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px 52px;
-  background: linear-gradient(135deg, #E8856C 0%, #e6735a 100%);
+  background: linear-gradient(135deg, #3182ce 0%, #2b6cb0 50%, #2c5282 100%);
   color: #fff;
   font-size: 18px;
   font-weight: 700;
@@ -97,7 +97,7 @@ img {
   text-decoration: none;
   text-align: center;
   letter-spacing: 0.06em;
-  box-shadow: 0 6px 24px rgba(232,133,108,0.4);
+  box-shadow: 0 6px 24px rgba(49,130,206,0.4);
   transition: transform 0.3s cubic-bezier(.25,.8,.25,1), box-shadow 0.3s ease, background 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -123,21 +123,21 @@ img {
 .cta-btn:hover {
   animation-play-state: paused;
   transform: translateY(-5px) scale(1.08);
-  box-shadow: 0 14px 40px rgba(232,133,108,0.55);
-  background: linear-gradient(135deg, #ec9580 0%, #E8856C 100%);
+  box-shadow: 0 14px 40px rgba(49,130,206,0.5);
+  background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
 }
 
 .cta-btn:active {
   animation-play-state: paused;
   transform: translateY(-1px) scale(0.99);
-  box-shadow: 0 4px 16px rgba(232,133,108,0.35);
+  box-shadow: 0 4px 16px rgba(49,130,206,0.3);
 }
 
 /* ========================
    Section 1: First View
    ======================== */
 .hero {
-  background: linear-gradient(180deg, #e8ddd0 0%, #f5efe8 100%);
+  background: linear-gradient(180deg, #dbeafe 0%, #f0f5fa 100%);
   padding: 40px 20px 70px;
   text-align: center;
 }
@@ -157,7 +157,7 @@ img {
 .hero-subtitle {
   font-size: 18px;
   font-weight: 400;
-  color: #6b5e53;
+  color: #4a5568;
   margin-bottom: 32px;
   letter-spacing: 0.04em;
   animation: fadeUp 0.8s 0.3s cubic-bezier(.25,.8,.25,1) both;
@@ -183,7 +183,7 @@ img {
    Section 3: 4 Supports
    ======================== */
 .supports-overview {
-  background: #ece3d5;
+  background: #e8f0fe;
 }
 
 .support-cards {
@@ -207,7 +207,7 @@ img {
   align-items: center;
   justify-content: center;
   background: #fff;
-  border: 1px solid #e0d5c8;
+  border: 1px solid #d0dff0;
 }
 
 .support-card:hover {
@@ -216,21 +216,21 @@ img {
 }
 
 .support-card--retire { color: #e8856c; }
-.support-card--learn  { color: #5cc9a7; }
-.support-card--career { color: #6ba3e8; }
-.support-card--skill  { color: #b07ce8; }
+.support-card--learn  { color: #38a169; }
+.support-card--career { color: #3182ce; }
+.support-card--skill  { color: #805ad5; }
 
 /* ========================
    Case Study
    ======================== */
 .case-study {
-  background: #ece3d5;
+  background: linear-gradient(180deg, #f0f5fa 0%, #dbeafe 50%, #f0f5fa 100%);
 }
 
 .case-study-intro {
   text-align: center;
   font-size: 15px;
-  color: #5a4a42;
+  color: #4a5568;
   margin-bottom: 32px;
   line-height: 1.9;
 }
@@ -259,7 +259,7 @@ img {
 .case-profile-name {
   font-size: 17px;
   font-weight: 700;
-  color: #3a3a3a;
+  color: #2d3748;
 }
 
 .case-profile-detail {
@@ -282,7 +282,7 @@ img {
   top: 0;
   bottom: 0;
   width: 3px;
-  background: linear-gradient(to bottom, #E8856C, #d4a574, #7bae7f, #6b9bc7);
+  background: linear-gradient(to bottom, #e8856c, #38a169, #3182ce, #805ad5);
   border-radius: 2px;
 }
 
@@ -307,23 +307,23 @@ img {
   height: 13px;
   border-radius: 50%;
   border: 3px solid #fff;
-  box-shadow: 0 0 0 2px #E8856C;
-  background: #E8856C;
+  box-shadow: 0 0 0 2px #e8856c;
+  background: #e8856c;
 }
 
 .case-step--learn .case-step-dot {
-  background: #d4a574;
-  box-shadow: 0 0 0 2px #d4a574;
+  background: #38a169;
+  box-shadow: 0 0 0 2px #38a169;
 }
 
 .case-step--career .case-step-dot {
-  background: #7bae7f;
-  box-shadow: 0 0 0 2px #7bae7f;
+  background: #3182ce;
+  box-shadow: 0 0 0 2px #3182ce;
 }
 
 .case-step--skill .case-step-dot {
-  background: #6b9bc7;
-  box-shadow: 0 0 0 2px #6b9bc7;
+  background: #805ad5;
+  box-shadow: 0 0 0 2px #805ad5;
 }
 
 .case-step-label {
@@ -331,28 +331,28 @@ img {
   font-size: 11px;
   font-weight: 700;
   color: #fff;
-  background: #E8856C;
+  background: #e8856c;
   padding: 2px 10px;
   border-radius: 20px;
   margin-bottom: 8px;
 }
 
 .case-step--learn .case-step-label {
-  background: #d4a574;
+  background: #38a169;
 }
 
 .case-step--career .case-step-label {
-  background: #7bae7f;
+  background: #3182ce;
 }
 
 .case-step--skill .case-step-label {
-  background: #6b9bc7;
+  background: #805ad5;
 }
 
 .case-step-title {
   font-size: 15px;
   font-weight: 700;
-  color: #3a3a3a;
+  color: #2d3748;
   margin-bottom: 6px;
 }
 
@@ -366,31 +366,31 @@ img {
   display: inline-block;
   font-size: 20px;
   font-weight: 700;
-  color: #E8856C;
+  color: #e8856c;
   margin-top: 8px;
 }
 
 .case-step--learn .case-step-amount {
-  color: #d4a574;
+  color: #38a169;
 }
 
 .case-step--career .case-step-amount {
-  color: #7bae7f;
+  color: #3182ce;
 }
 
 .case-step--skill .case-step-amount {
-  color: #6b9bc7;
+  color: #805ad5;
 }
 
 .case-total {
   max-width: 600px;
   margin: 0 auto;
-  background: linear-gradient(135deg, #E8856C, #d45a3a);
+  background: linear-gradient(135deg, #3182ce, #2b6cb0, #1a365d);
   border-radius: 20px;
   padding: 32px 24px;
   text-align: center;
   color: #fff;
-  box-shadow: 0 8px 30px rgba(232,133,108,0.3);
+  box-shadow: 0 8px 30px rgba(49,130,206,0.3);
 }
 
 .case-total-label {
@@ -452,7 +452,7 @@ img {
 .case-breakdown-value {
   font-size: 20px;
   font-weight: 700;
-  color: #E8856C;
+  color: #2b6cb0;
 }
 
 .case-breakdown-value small {
@@ -464,7 +464,7 @@ img {
    Testimonials
    ======================== */
 .testimonials {
-  background: #f5efe8;
+  background: #ffffff;
 }
 
 .testimonial-grid {
@@ -531,7 +531,7 @@ img {
 .testimonial-title {
   font-size: 16px;
   font-weight: 700;
-  color: #3a3a3a;
+  color: #2d3748;
   margin-bottom: 10px;
   line-height: 1.6;
 }
@@ -567,15 +567,15 @@ img {
 /* ========================
    Section 4-7: Detail sections
    ======================== */
-.bg-dark1 { background: #ece3d5; }
-.bg-dark2 { background: #f5efe8; }
-.bg-dark3 { background: #e4d8c8; }
+.bg-dark1 { background: #e8f0fe; }
+.bg-dark2 { background: #ffffff; }
+.bg-dark3 { background: #dbeafe; }
 
 /* ========================
    Section 8: Flow
    ======================== */
 .flow {
-  background: #e4d8c8;
+  background: #e8f0fe;
 }
 
 .steps {
@@ -602,14 +602,14 @@ img {
   top: 48px;
   bottom: 0;
   width: 2px;
-  border-left: 2px dashed #c8b9a8;
+  border-left: 2px dashed #a0c4e8;
 }
 
 .step-number {
   flex-shrink: 0;
   width: 44px;
   height: 44px;
-  background: #E8856C;
+  background: #3182ce;
   color: #fff;
   border-radius: 50%;
   display: flex;
@@ -625,7 +625,7 @@ img {
 
 .step:hover .step-number {
   transform: scale(1.15);
-  box-shadow: 0 4px 16px rgba(232,133,108,0.4);
+  box-shadow: 0 4px 16px rgba(49,130,206,0.4);
 }
 
 .step-body {
@@ -636,7 +636,7 @@ img {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 2px;
-  color: #3a3a3a;
+  color: #2d3748;
 }
 
 .step-desc {
@@ -649,7 +649,7 @@ img {
    Section 9: Final CTA
    ======================== */
 .final-cta {
-  background: linear-gradient(180deg, #f5efe8 0%, #ece3d5 100%);
+  background: linear-gradient(180deg, #f0f5fa 0%, #dbeafe 100%);
   text-align: center;
 }
 
@@ -657,7 +657,7 @@ img {
   text-align: center;
   font-size: 19px;
   font-weight: 700;
-  color: #3a3a3a;
+  color: #1a365d;
   margin-bottom: 36px;
   line-height: 1.9;
 }
@@ -684,13 +684,13 @@ img {
    Letter / Founder Message
    ======================== */
 .letter {
-  background: #ece3d5;
+  background: #dbeafe;
 }
 
 .letter-inner {
   max-width: 640px;
   margin: 0 auto;
-  background: #fdfaf6;
+  background: #fafcff;
   border-radius: 4px;
   padding: 56px 40px 48px;
   box-shadow: 0 8px 40px rgba(0,0,0,0.08);
@@ -708,7 +708,7 @@ img {
   font-family: 'Zen Kurenaido', sans-serif;
   font-size: 24px;
   font-weight: 400;
-  color: #5a4a42;
+  color: #2d4a7c;
   margin-bottom: 36px;
   line-height: 1.7;
 }
@@ -717,7 +717,7 @@ img {
   font-family: 'Zen Kurenaido', sans-serif;
   font-size: 16px;
   line-height: 2.5;
-  color: #4a3f38;
+  color: #3d5a80;
   text-align: center;
   padding-left: 0;
 }
@@ -748,21 +748,21 @@ img {
   font-family: 'Zen Kurenaido', sans-serif;
   font-size: 16px;
   line-height: 2.5;
-  color: #4a3f38;
+  color: #3d5a80;
   font-style: normal;
 }
 
 .letter-voices-lead {
   font-family: 'Zen Kurenaido', sans-serif;
   font-size: 16px;
-  color: #4a3f38;
+  color: #3d5a80;
   line-height: 2.5;
   margin-bottom: 0;
   text-align: center;
 }
 
 .letter-hl {
-  color: #c0543c;
+  color: #2b6cb0;
   font-weight: 400;
 }
 
@@ -771,7 +771,7 @@ img {
   font-family: 'Zen Kurenaido', sans-serif;
   font-size: 17px;
   font-weight: 400;
-  color: #7a6a60;
+  color: #5a7a9a;
   margin-top: 16px;
   padding-left: 24px;
 }
@@ -799,8 +799,8 @@ img {
    Footer
    ======================== */
 .footer {
-  background: #3a352f;
-  color: #bbb;
+  background: #1a365d;
+  color: #bdd5ea;
   text-align: center;
   padding: 48px 20px;
 }
@@ -815,7 +815,7 @@ img {
 
 .footer-copy {
   font-size: 12px;
-  color: #999;
+  color: #7ba3c9;
 }
 
 /* ========================
@@ -885,7 +885,7 @@ img {
   display: block;
   width: 0;
   height: 3px;
-  background: #E8856C;
+  background: #3182ce;
   margin: 10px auto 0;
   border-radius: 2px;
   transition: width 0.6s 0.3s cubic-bezier(.25,.8,.25,1);
