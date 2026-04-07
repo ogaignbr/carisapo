@@ -249,8 +249,17 @@ img {
 }
 
 .case-profile-icon {
-  font-size: 40px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4a9eff, #63b3ed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
   line-height: 1;
+  flex-shrink: 0;
+  box-shadow: 0 2px 10px rgba(74,158,255,0.3);
 }
 
 .case-profile-info {
@@ -696,14 +705,14 @@ img {
 .letter-inner {
   max-width: 640px;
   margin: 0 auto;
-  background: rgba(255,255,255,0.04);
+  background: #faf6f0;
   border-radius: 4px;
   padding: 56px 40px 48px;
   box-shadow: 0 8px 40px rgba(0,0,0,0.3);
-  border: 1px solid rgba(100,160,230,0.12);
+  border: none;
   position: relative;
   background-image:
-    url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+    url("data:image/svg+xml,%3Csvg width='300' height='300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.5' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
 }
 
 .letter-inner::before {
@@ -715,7 +724,7 @@ img {
   font-family: 'Zen Kurenaido', sans-serif;
   font-size: 24px;
   font-weight: 400;
-  color: #c8ddf0;
+  color: #3a2e24;
   margin-bottom: 36px;
   line-height: 1.7;
 }
@@ -724,7 +733,7 @@ img {
   font-family: 'Zen Kurenaido', sans-serif;
   font-size: 16px;
   line-height: 2.5;
-  color: #a0bed8;
+  color: #4a3f35;
   text-align: center;
   padding-left: 0;
 }
@@ -755,21 +764,21 @@ img {
   font-family: 'Zen Kurenaido', sans-serif;
   font-size: 16px;
   line-height: 2.5;
-  color: #a0bed8;
+  color: #4a3f35;
   font-style: normal;
 }
 
 .letter-voices-lead {
   font-family: 'Zen Kurenaido', sans-serif;
   font-size: 16px;
-  color: #a0bed8;
+  color: #4a3f35;
   line-height: 2.5;
   margin-bottom: 0;
   text-align: center;
 }
 
 .letter-hl {
-  color: #ff6b6b;
+  color: #cc3333;
   font-weight: 400;
 }
 
@@ -778,7 +787,7 @@ img {
   font-family: 'Zen Kurenaido', sans-serif;
   font-size: 17px;
   font-weight: 400;
-  color: #7a9abc;
+  color: #6b5e50;
   margin-top: 16px;
   padding-left: 24px;
 }
@@ -987,7 +996,7 @@ img {
     <h2 class="section-heading fade-in">利用者の実例</h2>
 
     <div class="case-study-profile fade-in">
-      <div class="case-profile-icon">👤</div>
+      <div class="case-profile-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="white"><circle cx="12" cy="8" r="4"/><path d="M12 14c-5 0-8 2.5-8 5v1h16v-1c0-2.5-3-5-8-5z"/></svg></div>
       <div class="case-profile-info">
         <div class="case-profile-name">Aさん（20代後半・男性）</div>
         <div class="case-profile-detail">元会社員 ／ 当時の年収：約300万円</div>
