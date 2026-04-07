@@ -6,7 +6,7 @@
 <title>キャリサポ｜あなたのこれからに寄り添う。</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Zen+Kurenaido&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after {
   margin: 0;
@@ -20,10 +20,10 @@ html {
 
 body {
   font-family: 'Noto Sans JP', sans-serif;
-  color: #3a3a3a;
+  color: #e0e0e0;
   line-height: 1.9;
   font-size: 15px;
-  background: #fff;
+  background: #1a1a1a;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -46,16 +46,9 @@ img {
   text-align: center;
   font-size: 26px;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   letter-spacing: 0.04em;
-}
-
-.section-subheading {
-  text-align: center;
-  font-size: 17px;
-  font-weight: 400;
-  color: #777;
-  margin-bottom: 36px;
+  color: #fff;
 }
 
 .section-img {
@@ -63,25 +56,17 @@ img {
   max-width: 800px;
   margin: 0 auto 40px;
   border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  box-shadow: 0 4px 30px rgba(0,0,0,0.3);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .section-img:hover {
   transform: translateY(-4px) scale(1.01);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.12);
-}
-
-.section-text {
-  text-align: center;
-  font-size: 15px;
-  line-height: 2;
-  color: #555;
-  margin-bottom: 36px;
+  box-shadow: 0 12px 48px rgba(0,0,0,0.45);
 }
 
 .hl {
-  color: #d9534f;
+  color: #E8856C;
   font-weight: 700;
 }
 
@@ -152,7 +137,7 @@ img {
    Section 1: First View
    ======================== */
 .hero {
-  background: linear-gradient(180deg, #f2ddd6 0%, #ffffff 100%);
+  background: linear-gradient(180deg, #252525 0%, #1a1a1a 100%);
   padding: 40px 20px 70px;
   text-align: center;
 }
@@ -164,7 +149,7 @@ img {
 .hero-img {
   width: 100%;
   border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  box-shadow: 0 4px 30px rgba(0,0,0,0.4);
   margin-bottom: 36px;
   animation: heroImgIn 1s cubic-bezier(.25,.8,.25,1) both;
 }
@@ -172,7 +157,7 @@ img {
 .hero-subtitle {
   font-size: 18px;
   font-weight: 400;
-  color: #777;
+  color: #bbb;
   margin-bottom: 32px;
   letter-spacing: 0.04em;
   animation: fadeUp 0.8s 0.3s cubic-bezier(.25,.8,.25,1) both;
@@ -195,49 +180,17 @@ img {
 }
 
 /* ========================
-   Section 2: Worries
-   ======================== */
-.worries {
-  background: #f2ddd6;
-}
-
-.worry-list {
-  list-style: none;
-  text-align: center;
-  margin-bottom: 32px;
-}
-
-.worry-list li {
-  font-size: 15px;
-  color: #888;
-  padding: 6px 0;
-  line-height: 2;
-}
-
-.worry-list li::before {
-  content: "・";
-}
-
-.worry-answer {
-  text-align: center;
-  font-size: 17px;
-  font-weight: 700;
-  color: #E8856C;
-  margin-bottom: 0;
-}
-
-/* ========================
    Section 3: 4 Supports
    ======================== */
 .supports-overview {
-  background: #fff;
+  background: #222;
 }
 
 .support-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
-  margin-bottom: 40px;
+  margin-bottom: 0;
 }
 
 .support-card {
@@ -253,23 +206,25 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #2a2a2a;
+  border: 1px solid #333;
 }
 
 .support-card:hover {
   transform: translateY(-6px) scale(1.04);
-  box-shadow: 0 8px 28px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.3);
 }
 
-.support-card--retire { background: #f9f9f9; color: #c96a52; }
-.support-card--learn  { background: #f9f9f9; color: #3a9e7e; }
-.support-card--career { background: #f9f9f9; color: #4a7abf; }
-.support-card--skill  { background: #f9f9f9; color: #7e5aad; }
+.support-card--retire { color: #e8856c; }
+.support-card--learn  { color: #5cc9a7; }
+.support-card--career { color: #6ba3e8; }
+.support-card--skill  { color: #b07ce8; }
 
 /* ========================
    Testimonials
    ======================== */
 .testimonials {
-  background: #f2ddd6;
+  background: #1a1a1a;
 }
 
 .testimonial-grid {
@@ -281,16 +236,17 @@ img {
 }
 
 .testimonial-card {
-  background: #fff;
+  background: #252525;
   border-radius: 16px;
   padding: 28px 26px 24px;
-  box-shadow: 0 3px 18px rgba(0,0,0,0.06);
+  box-shadow: 0 3px 18px rgba(0,0,0,0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #333;
 }
 
 .testimonial-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.35);
 }
 
 .testimonial-header {
@@ -311,10 +267,10 @@ img {
   letter-spacing: 0.03em;
 }
 
-.testimonial-badge--retire { background: #fce8e3; color: #c96a52; }
-.testimonial-badge--learn  { background: #e0f5ef; color: #3a9e7e; }
-.testimonial-badge--career { background: #e3edfb; color: #4a7abf; }
-.testimonial-badge--skill  { background: #ece3f7; color: #7e5aad; }
+.testimonial-badge--retire { background: rgba(232,133,108,0.15); color: #e8856c; }
+.testimonial-badge--learn  { background: rgba(92,201,167,0.15); color: #5cc9a7; }
+.testimonial-badge--career { background: rgba(107,163,232,0.15); color: #6ba3e8; }
+.testimonial-badge--skill  { background: rgba(176,124,232,0.15); color: #b07ce8; }
 
 .testimonial-stars {
   font-size: 18px;
@@ -323,26 +279,26 @@ img {
 }
 
 .testimonial-star--empty {
-  color: #e0d6c2;
+  color: #555;
 }
 
 .testimonial-meta {
   font-size: 13px;
-  color: #aaa;
+  color: #888;
   margin-bottom: 10px;
 }
 
 .testimonial-title {
   font-size: 16px;
   font-weight: 700;
-  color: #3a3a3a;
+  color: #eee;
   margin-bottom: 10px;
   line-height: 1.6;
 }
 
 .testimonial-body {
   font-size: 14px;
-  color: #666;
+  color: #aaa;
   line-height: 1.95;
 }
 
@@ -359,17 +315,15 @@ img {
 /* ========================
    Section 4-7: Detail sections
    ======================== */
-.bg-white  { background: #fff; }
-.bg-pink   { background: #f2ddd6; }
-.bg-mint   { background: #d5e5d8; }
-.bg-blue   { background: #ddd5e5; }
-.bg-purple { background: #ddd5e5; }
+.bg-dark1 { background: #222; }
+.bg-dark2 { background: #1a1a1a; }
+.bg-dark3 { background: #252525; }
 
 /* ========================
    Section 8: Flow
    ======================== */
 .flow {
-  background: #d5e5d8;
+  background: #222;
 }
 
 .steps {
@@ -396,7 +350,7 @@ img {
   top: 48px;
   bottom: 0;
   width: 2px;
-  border-left: 2px dashed #a8c4ab;
+  border-left: 2px dashed #555;
 }
 
 .step-number {
@@ -430,11 +384,12 @@ img {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 2px;
+  color: #eee;
 }
 
 .step-desc {
   font-size: 14px;
-  color: #888;
+  color: #999;
   line-height: 1.8;
 }
 
@@ -442,7 +397,7 @@ img {
    Section 9: Final CTA
    ======================== */
 .final-cta {
-  background: linear-gradient(180deg, #ffffff 0%, #f2ddd6 100%);
+  background: linear-gradient(180deg, #1a1a1a 0%, #252525 100%);
   text-align: center;
 }
 
@@ -450,7 +405,7 @@ img {
   text-align: center;
   font-size: 19px;
   font-weight: 700;
-  color: #3a3a3a;
+  color: #eee;
   margin-bottom: 36px;
   line-height: 1.9;
 }
@@ -469,7 +424,7 @@ img {
 .final-note {
   text-align: center;
   font-size: 13px;
-  color: #aaa;
+  color: #777;
   margin-top: 20px;
 }
 
@@ -477,96 +432,121 @@ img {
    Letter / Founder Message
    ======================== */
 .letter {
-  background: linear-gradient(180deg, #f2ddd6 0%, #fff 100%);
+  background: #1a1a1a;
 }
 
 .letter-inner {
-  max-width: 680px;
+  max-width: 640px;
   margin: 0 auto;
-  background: #fff;
-  border-radius: 20px;
-  padding: 48px 32px 44px;
-  box-shadow: 0 4px 32px rgba(0,0,0,0.06);
-  border: 1px solid #f0e8e4;
+  background: #fdfaf6;
+  border-radius: 4px;
+  padding: 56px 40px 48px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.4);
   position: relative;
+  background-image:
+    repeating-linear-gradient(
+      transparent,
+      transparent 39px,
+      #e8ddd4 39px,
+      #e8ddd4 40px
+    );
+  background-position: 0 56px;
 }
 
 .letter-inner::before {
   content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: #E8856C;
-  border-radius: 2px;
-  margin: 0 auto 32px;
+  position: absolute;
+  top: 0;
+  left: 52px;
+  width: 1px;
+  height: 100%;
+  background: #dbb8a8;
+  opacity: 0.5;
 }
 
 .letter-heading {
   text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  color: #3a3a3a;
-  margin-bottom: 32px;
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #5a4a42;
+  margin-bottom: 36px;
   line-height: 1.7;
 }
 
 .letter-body {
-  font-size: 15px;
-  line-height: 2.15;
-  color: #555;
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 16px;
+  line-height: 2.5;
+  color: #4a3f38;
   text-align: left;
+  padding-left: 24px;
 }
 
 .letter-body p {
-  margin-bottom: 24px;
-}
-
-.letter-body p:last-child {
   margin-bottom: 0;
 }
 
 .letter-voices {
-  margin: 32px 0;
+  margin: 8px 0;
   padding: 0;
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 0;
 }
 
 .letter-voice {
-  background: #fdf8f6;
-  border-left: 3px solid #E8856C;
-  border-radius: 0 12px 12px 0;
-  padding: 18px 22px;
-  font-size: 15px;
-  line-height: 1.9;
-  color: #555;
-  font-style: italic;
+  background: transparent;
+  border-left: none;
+  border-radius: 0;
+  padding: 0;
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 16px;
+  line-height: 2.5;
+  color: #4a3f38;
+  font-style: normal;
 }
 
 .letter-voices-lead {
-  font-size: 15px;
-  color: #555;
-  line-height: 2.15;
-  margin-bottom: 20px;
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 16px;
+  color: #4a3f38;
+  line-height: 2.5;
+  margin-bottom: 0;
+}
+
+.letter-hl {
+  color: #c0543c;
+  font-weight: 400;
 }
 
 .letter-sign {
   text-align: right;
-  font-size: 15px;
-  font-weight: 500;
-  color: #999;
-  margin-top: 36px;
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #7a6a60;
+  margin-top: 16px;
+  padding-left: 24px;
 }
 
 @media (max-width: 599px) {
   .letter-inner {
-    padding: 36px 22px 32px;
+    padding: 40px 24px 36px;
+  }
+
+  .letter-inner::before {
+    left: 28px;
+  }
+
+  .letter-body {
+    padding-left: 16px;
+    font-size: 15px;
   }
 
   .letter-heading {
-    font-size: 19px;
+    font-size: 20px;
   }
 }
 
@@ -574,8 +554,8 @@ img {
    Footer
    ======================== */
 .footer {
-  background: #3a3a3a;
-  color: #ccc;
+  background: #111;
+  color: #888;
   text-align: center;
   padding: 48px 20px;
 }
@@ -590,7 +570,7 @@ img {
 
 .footer-copy {
   font-size: 12px;
-  color: #999;
+  color: #666;
 }
 
 /* ========================
@@ -691,10 +671,6 @@ img {
     font-size: 28px;
   }
 
-  .section-text {
-    font-size: 16px;
-  }
-
   .cta-btn {
     font-size: 19px;
     padding: 22px 56px;
@@ -739,22 +715,6 @@ img {
   </div>
 </section>
 
-<!-- Section 2: Worries -->
-<section class="section worries">
-  <div class="section-inner">
-    <h2 class="section-heading fade-in">こんなお悩み、ありませんか？</h2>
-    <img src="2.jpg" alt="お悩みイメージ" class="section-img fade-in-scale">
-    <ul class="worry-list">
-      <li class="fade-in delay-1">貯金がなくて、仕事を辞められない…</li>
-      <li class="fade-in delay-2">気持ちが落ちて休みたいけど、収入が途絶えるのが怖い…</li>
-      <li class="fade-in delay-3">転職したいけど、誰に相談すればいいかわからない…</li>
-      <li class="fade-in delay-4">自分に合った仕事が見つけられない…</li>
-      <li class="fade-in delay-5">スキルを学びたいけど、高額な費用は払えない…</li>
-    </ul>
-    <p class="worry-answer fade-in delay-5">そのすべてのお悩みに、キャリサポが応えます。</p>
-  </div>
-</section>
-
 <!-- Section 3: 4 Supports Overview -->
 <section class="section supports-overview" id="supports">
   <div class="section-inner">
@@ -774,8 +734,6 @@ img {
   <div class="section-inner">
     <h2 class="section-heading fade-in">キャリサポを利用した方の声</h2>
     <div class="testimonial-grid">
-
-      <!-- 1. 退職サポート -->
       <div class="testimonial-card fade-in delay-1">
         <div class="testimonial-header">
           <span class="testimonial-badge testimonial-badge--retire">退職サポート</span>
@@ -785,8 +743,6 @@ img {
         <p class="testimonial-title">退職後の不安がかなり軽くなりました</p>
         <p class="testimonial-body">退職したい気持ちはあったのですが、失業保険や手続きのことが全く分からず不安でした。LINEで相談したところ、必要な流れを丁寧に教えてもらえて安心できました。毎月約15万円が1年間もらえると聞いて、焦らず安心して仕事を探せたのが本当に大きかったです。すぐに全部解決というより、一つずつ整理しながら進められたので、ひとりで抱え込まずに済みました。</p>
       </div>
-
-      <!-- 2. 学習サポート -->
       <div class="testimonial-card fade-in delay-2">
         <div class="testimonial-header">
           <span class="testimonial-badge testimonial-badge--learn">学習サポート</span>
@@ -796,8 +752,6 @@ img {
         <p class="testimonial-title">焦らず学び直せる環境がありがたかったです</p>
         <p class="testimonial-body">仕事を辞めたあと、このままでいいのかなと焦る気持ちがありましたが、すぐに前向きに働ける状態でもありませんでした。そんな中で、支援金をもらいながら自分のレベルアップに時間を使えたのが本当に良かったです。毎月の支給についても丁寧に説明してもらえて、安心して学習を始めることができました。無理のないペースで進められたので、気持ちの面でもかなり助かりました。</p>
       </div>
-
-      <!-- 3. 転職サポート -->
       <div class="testimonial-card fade-in delay-3">
         <div class="testimonial-header">
           <span class="testimonial-badge testimonial-badge--career">転職サポート</span>
@@ -807,8 +761,6 @@ img {
         <p class="testimonial-title">気軽に相談できて、ひとりじゃないと感じました</p>
         <p class="testimonial-body">転職したいと思っていても、自分に何が合っているのか分からず、なかなか動けずにいました。相談してからは、求人紹介だけでなく、書類作成や面接対策まで丁寧に見てもらえてとても心強かったです。特にキャリアアドバイザーの方がすごく寄り添ってくれて、気軽に相談できたのが安心感につながりました。自分の希望をしっかり聞いたうえで提案してくれたので、納得しながら進められました。</p>
       </div>
-
-      <!-- 4. スキルアップサポート -->
       <div class="testimonial-card fade-in delay-4">
         <div class="testimonial-header">
           <span class="testimonial-badge testimonial-badge--skill">スキルアップサポート</span>
@@ -818,59 +770,42 @@ img {
         <p class="testimonial-title">仕事にも日常にも活かせる学びでした</p>
         <p class="testimonial-body">今の仕事を続けるだけでいいのか迷っていた時に相談しました。これから必要になるであろうAIスキルを学ぶことができて、仕事はもちろん、プライベートでも活用できる場面があり、自分の可能性が広がったと感じています。難しすぎる内容ではなく、今の自分に合う形で学べたのも良かったです。将来に向けて一歩踏み出せた感覚があります。</p>
       </div>
-
     </div>
   </div>
 </section>
 
 <!-- Section 4: Retire Support -->
-<section class="section bg-pink" id="sec-retire">
+<section class="section bg-dark1" id="sec-retire">
   <div class="section-inner">
     <h2 class="section-heading fade-in">退職サポート</h2>
     <img src="4.jpg" alt="退職サポート" class="section-img fade-in-left">
-    <p class="section-text fade-in delay-2">
-      退職の手続きや届出をプロがサポート。<br>
-      失業保険の申請もおまかせ。最大約2年間の受給をサポートします。
-    </p>
     <a href="#contact" class="cta-btn">毎月いくらもらえるか相談する</a>
   </div>
 </section>
 
 <!-- Section 5: Learning Support -->
-<section class="section bg-mint" id="sec-learn">
+<section class="section bg-dark2" id="sec-learn">
   <div class="section-inner">
     <h2 class="section-heading fade-in">学習サポート</h2>
     <img src="5.jpg" alt="学習サポート" class="section-img fade-in-right">
-    <p class="section-text fade-in delay-2">
-      教材費・交通費として毎月3万円を支給。<br>
-      あなたのペースで、新しいスキルを身につけられます。
-    </p>
     <a href="#contact" class="cta-btn">対象条件を確認する</a>
   </div>
 </section>
 
 <!-- Section 6: Career Support -->
-<section class="section bg-white" id="sec-career">
+<section class="section bg-dark3" id="sec-career">
   <div class="section-inner">
     <h2 class="section-heading fade-in">転職サポート</h2>
     <img src="6.jpg" alt="転職サポート" class="section-img fade-in-left">
-    <p class="section-text fade-in delay-2">
-      キャリアアドバイザーがあなたに合った企業をご紹介。<br>
-      応募書類の作成から面接対策まで、フルサポートします。
-    </p>
     <a href="#contact" class="cta-btn">転職の相談をする</a>
   </div>
 </section>
 
 <!-- Section 7: Skill Up Support -->
-<section class="section bg-purple" id="sec-skill">
+<section class="section bg-dark1" id="sec-skill">
   <div class="section-inner">
     <h2 class="section-heading fade-in">スキルアップサポート</h2>
     <img src="7.jpg" alt="スキルアップサポート" class="section-img fade-in-right">
-    <p class="section-text fade-in delay-2">
-      AI・DXのリスキリングプログラムを受講可能。<br>
-      働きながらでも学べる。これからの時代に必要なスキルを。
-    </p>
     <a href="#contact" class="cta-btn">スキルアップの詳細を見る</a>
   </div>
 </section>
@@ -917,39 +852,28 @@ img {
 <section class="section letter">
   <div class="section-inner">
     <div class="letter-inner fade-in">
-      <h2 class="letter-heading">このサポートに込めた思い</h2>
+      <h2 class="letter-heading">あなたへの手紙</h2>
       <div class="letter-body">
-        <p>老後2,000万円問題、年金の不安、少子高齢化——。<br>ニュースを開けば、将来への不安をかき立てる話題ばかりが目に飛び込んできます。<br><span class="hl">このままでいいのだろうか</span>と、心のどこかで感じている方は少なくないはずです。</p>
+        <p>はじめまして。キャリサポです。</p>
+        <p>この手紙を読んでくださっているあなたは、きっと今、何かを変えたいと感じているのだと思います。</p>
+        <p>老後のお金、年金、将来への漠然とした不安。<br>ニュースを見るたびに焦りばかりが募って、でも何をすればいいかわからない——。<br>そんな毎日を過ごしていませんか。</p>
+        <p>仕事を辞めたいけど、貯金がない。<br>心が疲れて休みたいけど、収入が止まるのが怖い。<br>転職を考えても、誰に相談すればいいかわからない。</p>
+        <p>あなただけではありません。<br>私たちのもとに来てくださる方の多くが、同じ壁の前で立ち止まっていました。</p>
+        <p>キャリサポは、そんな方たちの<span class="letter-hl">変わるきっかけ</span>になりたくて生まれました。</p>
+        <p>仕事は人生のおよそ3分の1。<br>その時間がつらいものであれば、残りの人生にも影を落とします。<br>でも、もし毎朝<span class="letter-hl">今日もがんばろう</span>と思えたなら。<br>それだけで、人生の景色はまるで変わるはずです。</p>
 
-        <p>人生を変えたい。もっと自分らしく働きたい。<br>そう思っていても、なかなか一歩を踏み出すきっかけがない。<br>それが多くの人のリアルな本音ではないでしょうか。</p>
-
-        <p>貯金がないから、仕事を辞めるのが怖い。<br>辞めたあとの生活が想像できなくて、不安で夜も眠れない。<br>転職したいけど、自分に何が向いているのかわからない。<br>誰に相談すればいいのかもわからない。<br>スキルを身につけたいけど、高額なスクールには通えない。</p>
-
-        <p>こうした悩みは、決して特別なものではありません。<br>私たちのもとに相談に来てくださる方の多くが、まったく同じ壁にぶつかっていました。</p>
-
-        <p>だからこそ、キャリサポを作りました。<br>同じように悩み、立ち止まっている人が<span class="hl">変わるきっかけ</span>をつかめる場所を作りたい。<br>その一心で、このサポートを立ち上げました。</p>
-
-        <p>仕事は、人生のおよそ3分の1を占めます。<br>1日8時間、週5日。その時間が苦痛やストレスで埋め尽くされていたら、残りの3分の2——家族との時間も、趣味の時間も、休日でさえも、心から楽しめなくなってしまいます。</p>
-
-        <p>逆に、仕事が<span class="hl">今日もがんばろう</span>と思えるものになったら。<br>朝起きるのが少しだけ楽しみになったら。<br>それだけで、人生全体の景色が変わると、私たちは信じています。</p>
-
-        <p class="letter-voices-lead">実際に、キャリサポを利用してくださった方から、こんな言葉をいただいています。</p>
-
+        <p class="letter-voices-lead">実際に、こんな声が届いています。</p>
         <ul class="letter-voices">
-          <li class="letter-voice"><span class="hl">金曜日よりも、月曜日が楽しみになりました。</span></li>
-          <li class="letter-voice"><span class="hl">年収が上がって、両親に旅行と食事をプレゼントできたんです。</span>その時にありがとうって言われて、あの瞬間がいちばん嬉しかった。</li>
-          <li class="letter-voice"><span class="hl">仕事を辞めるのは、逃げじゃないよ</span>——その一言に、どれだけ救われたかわかりません。</li>
+          <li class="letter-voice">——<span class="letter-hl">金曜日よりも、月曜日が楽しみになりました。</span></li>
+          <li class="letter-voice">——<span class="letter-hl">年収が上がって、両親に旅行をプレゼントできました。</span>ありがとうって言われたあの瞬間が、いちばん嬉しかった。</li>
+          <li class="letter-voice">——<span class="letter-hl">仕事を辞めるのは、逃げじゃないよ。</span>その一言に、どれだけ救われたかわかりません。</li>
         </ul>
 
-        <p>こうした声を聞くたびに、このサポートを作って良かったと心から感じます。<br>そして、次はあなたの番かもしれません。</p>
-
-        <p>もちろん、すぐにすべてが変わるわけではありません。<br>でも、<span class="hl">変わりたい</span>と思ったその気持ちこそが、いちばん大切な第一歩です。</p>
-
-        <p>退職の手続きがわからなくても、大丈夫です。<br>貯金がなくても、大丈夫です。<br>スキルに自信がなくても、大丈夫です。<br>そのすべてを、私たちが一緒に支えます。</p>
-
-        <p>どうか、ひとりで抱え込まないでください。<br>あなたの人生の3分の1が、毎日少しでも楽しみに変わるように。<br>そんな未来を、一緒に見つけにいきませんか。</p>
-
-        <p>勇気を出して連絡してくれた、その一歩に、<br>私たちは全力でお応えします。</p>
+        <p>こうした言葉をいただくたびに、このサポートを作ってよかったと心から思います。</p>
+        <p>すぐにすべてが変わるわけではありません。<br>でも、<span class="letter-hl">変わりたい</span>と思ったその気持ちが、いちばん大切な第一歩です。</p>
+        <p>手続きがわからなくても。貯金がなくても。スキルに自信がなくても。<br>大丈夫です。私たちが一緒に支えます。</p>
+        <p>どうか、ひとりで抱え込まないでください。<br>あなたの人生の3分の1が、少しでも楽しみに変わるように。<br>その未来を、一緒に見つけにいきませんか。</p>
+        <p>勇気を出してくれたその一歩に、全力でお応えします。</p>
       </div>
       <p class="letter-sign">—— キャリサポ 一同</p>
     </div>
