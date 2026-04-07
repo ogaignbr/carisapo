@@ -221,6 +221,246 @@ img {
 .support-card--skill  { color: #b07ce8; }
 
 /* ========================
+   Case Study
+   ======================== */
+.case-study {
+  background: #ece3d5;
+}
+
+.case-study-intro {
+  text-align: center;
+  font-size: 15px;
+  color: #5a4a42;
+  margin-bottom: 32px;
+  line-height: 1.9;
+}
+
+.case-study-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 36px;
+  padding: 20px 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.case-profile-icon {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.case-profile-info {
+  text-align: left;
+}
+
+.case-profile-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: #3a3a3a;
+}
+
+.case-profile-detail {
+  font-size: 13px;
+  color: #7a7a7a;
+  margin-top: 2px;
+}
+
+.case-timeline {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  padding-left: 36px;
+}
+
+.case-timeline::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, #E8856C, #d4a574, #7bae7f, #6b9bc7);
+  border-radius: 2px;
+}
+
+.case-step {
+  position: relative;
+  margin-bottom: 28px;
+  padding: 20px 20px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+.case-step:last-child {
+  margin-bottom: 0;
+}
+
+.case-step-dot {
+  position: absolute;
+  left: -29px;
+  top: 24px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px #E8856C;
+  background: #E8856C;
+}
+
+.case-step--learn .case-step-dot {
+  background: #d4a574;
+  box-shadow: 0 0 0 2px #d4a574;
+}
+
+.case-step--career .case-step-dot {
+  background: #7bae7f;
+  box-shadow: 0 0 0 2px #7bae7f;
+}
+
+.case-step--skill .case-step-dot {
+  background: #6b9bc7;
+  box-shadow: 0 0 0 2px #6b9bc7;
+}
+
+.case-step-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+  background: #E8856C;
+  padding: 2px 10px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+
+.case-step--learn .case-step-label {
+  background: #d4a574;
+}
+
+.case-step--career .case-step-label {
+  background: #7bae7f;
+}
+
+.case-step--skill .case-step-label {
+  background: #6b9bc7;
+}
+
+.case-step-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #3a3a3a;
+  margin-bottom: 6px;
+}
+
+.case-step-desc {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.7;
+}
+
+.case-step-amount {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #E8856C;
+  margin-top: 8px;
+}
+
+.case-step--learn .case-step-amount {
+  color: #d4a574;
+}
+
+.case-step--career .case-step-amount {
+  color: #7bae7f;
+}
+
+.case-step--skill .case-step-amount {
+  color: #6b9bc7;
+}
+
+.case-total {
+  max-width: 600px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #E8856C, #d45a3a);
+  border-radius: 20px;
+  padding: 32px 24px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 8px 30px rgba(232,133,108,0.3);
+}
+
+.case-total-label {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.9;
+  margin-bottom: 8px;
+}
+
+.case-total-amount {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.case-total-amount small {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.case-total-sub {
+  font-size: 13px;
+  opacity: 0.85;
+  margin-top: 8px;
+  line-height: 1.7;
+}
+
+.case-total-note {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+}
+
+.case-breakdown {
+  max-width: 600px;
+  margin: 24px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.case-breakdown-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.case-breakdown-label {
+  font-size: 11px;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.case-breakdown-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #E8856C;
+}
+
+.case-breakdown-value small {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* ========================
    Testimonials
    ======================== */
 .testimonials {
@@ -303,6 +543,18 @@ img {
 }
 
 @media (min-width: 600px) {
+  .case-total-amount {
+    font-size: 52px;
+  }
+
+  .case-breakdown {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .case-step-amount {
+    font-size: 22px;
+  }
+
   .testimonial-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -719,6 +971,86 @@ img {
       <a href="#sec-career" class="support-card support-card--career fade-in delay-3">転職サポート</a>
       <a href="#sec-skill" class="support-card support-card--skill fade-in delay-4">スキルアップサポート</a>
     </div>
+  </div>
+</section>
+
+<!-- Case Study -->
+<section class="section case-study">
+  <div class="section-inner">
+    <h2 class="section-heading fade-in">利用者の実例</h2>
+
+    <div class="case-study-profile fade-in">
+      <div class="case-profile-icon">👤</div>
+      <div class="case-profile-info">
+        <div class="case-profile-name">Aさん（20代後半・男性）</div>
+        <div class="case-profile-detail">元会社員 ／ 当時の年収：約300万円</div>
+      </div>
+    </div>
+
+    <p class="case-study-intro fade-in">キャリサポの4つのサポートを<br>すべて活用した結果…</p>
+
+    <div class="case-timeline">
+
+      <div class="case-step fade-in">
+        <div class="case-step-dot"></div>
+        <div class="case-step-label">STEP 1 ─ 退職サポート</div>
+        <div class="case-step-title">18ヶ月間、毎月16.2万円を受給</div>
+        <div class="case-step-desc">退職後の生活費の不安をゼロに。<br>安心して次のキャリアに集中できる環境を整えました。</div>
+        <div class="case-step-amount">+291.6万円</div>
+      </div>
+
+      <div class="case-step case-step--learn fade-in">
+        <div class="case-step-dot"></div>
+        <div class="case-step-label">STEP 2 ─ 学習サポート</div>
+        <div class="case-step-title">18ヶ月間、毎月3万円をもらいながら学習</div>
+        <div class="case-step-desc">退職期間中に就労支援を受けながら<br>スキルアップの時間を確保。</div>
+        <div class="case-step-amount">+54万円</div>
+      </div>
+
+      <div class="case-step case-step--career fade-in">
+        <div class="case-step-dot"></div>
+        <div class="case-step-label">STEP 3 ─ 転職サポート</div>
+        <div class="case-step-title">キャリアアップ転職に成功</div>
+        <div class="case-step-desc">プロの伴走で自分に合った仕事が見つかり、<br>年収50万円アップ。半年後に入社お祝い金も。</div>
+        <div class="case-step-amount">年収+50万円 ＆ お祝い金30万円</div>
+      </div>
+
+      <div class="case-step case-step--skill fade-in">
+        <div class="case-step-dot"></div>
+        <div class="case-step-label">STEP 4 ─ スキルアップサポート</div>
+        <div class="case-step-title">経産省認定AIリスキリング講座を受講</div>
+        <div class="case-step-desc">通常48万円の講座が国の支援金で実質0円。<br>生成AIパスポートを取得しました。</div>
+        <div class="case-step-amount">48万円 → 0円</div>
+      </div>
+
+    </div>
+
+    <div class="case-total fade-in-scale">
+      <div class="case-total-label">キャリサポ利用で得られた総メリット</div>
+      <div class="case-total-amount">+473.6<small>万円相当</small></div>
+      <div class="case-total-sub">※受給額 + 費用節約 + 年収アップ初年度分を含む</div>
+
+    </div>
+
+    <div class="case-breakdown fade-in">
+      <div class="case-breakdown-item">
+        <div class="case-breakdown-label">退職サポート</div>
+        <div class="case-breakdown-value">291.6<small>万円</small></div>
+      </div>
+      <div class="case-breakdown-item">
+        <div class="case-breakdown-label">学習サポート</div>
+        <div class="case-breakdown-value">54<small>万円</small></div>
+      </div>
+      <div class="case-breakdown-item">
+        <div class="case-breakdown-label">転職お祝い金</div>
+        <div class="case-breakdown-value">30<small>万円</small></div>
+      </div>
+      <div class="case-breakdown-item">
+        <div class="case-breakdown-label">講座費用の節約</div>
+        <div class="case-breakdown-value">48<small>万円</small></div>
+      </div>
+    </div>
+
   </div>
 </section>
 
