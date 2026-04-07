@@ -20,10 +20,10 @@ html {
 
 body {
   font-family: 'Noto Sans JP', sans-serif;
-  color: #e0e0e0;
+  color: #3a3a3a;
   line-height: 1.9;
   font-size: 15px;
-  background: #1a1a1a;
+  background: #f5efe8;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -48,7 +48,7 @@ img {
   font-weight: 700;
   margin-bottom: 20px;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: #3a3a3a;
 }
 
 .section-img {
@@ -56,13 +56,13 @@ img {
   max-width: 800px;
   margin: 0 auto 40px;
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.1);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .section-img:hover {
   transform: translateY(-4px) scale(1.01);
-  box-shadow: 0 12px 48px rgba(0,0,0,0.45);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.15);
 }
 
 .hl {
@@ -137,7 +137,7 @@ img {
    Section 1: First View
    ======================== */
 .hero {
-  background: linear-gradient(180deg, #252525 0%, #1a1a1a 100%);
+  background: linear-gradient(180deg, #e8ddd0 0%, #f5efe8 100%);
   padding: 40px 20px 70px;
   text-align: center;
 }
@@ -149,7 +149,7 @@ img {
 .hero-img {
   width: 100%;
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.1);
   margin-bottom: 36px;
   animation: heroImgIn 1s cubic-bezier(.25,.8,.25,1) both;
 }
@@ -157,7 +157,7 @@ img {
 .hero-subtitle {
   font-size: 18px;
   font-weight: 400;
-  color: #bbb;
+  color: #6b5e53;
   margin-bottom: 32px;
   letter-spacing: 0.04em;
   animation: fadeUp 0.8s 0.3s cubic-bezier(.25,.8,.25,1) both;
@@ -183,7 +183,7 @@ img {
    Section 3: 4 Supports
    ======================== */
 .supports-overview {
-  background: #222;
+  background: #ece3d5;
 }
 
 .support-cards {
@@ -206,13 +206,13 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #2a2a2a;
-  border: 1px solid #333;
+  background: #fff;
+  border: 1px solid #e0d5c8;
 }
 
 .support-card:hover {
   transform: translateY(-6px) scale(1.04);
-  box-shadow: 0 8px 28px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.1);
 }
 
 .support-card--retire { color: #e8856c; }
@@ -224,7 +224,7 @@ img {
    Testimonials
    ======================== */
 .testimonials {
-  background: #1a1a1a;
+  background: #f5efe8;
 }
 
 .testimonial-grid {
@@ -236,17 +236,17 @@ img {
 }
 
 .testimonial-card {
-  background: #252525;
+  background: #fff;
   border-radius: 16px;
   padding: 28px 26px 24px;
-  box-shadow: 0 3px 18px rgba(0,0,0,0.2);
+  box-shadow: 0 3px 18px rgba(0,0,0,0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #333;
+  border: 1px solid #e8dfd5;
 }
 
 .testimonial-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
 }
 
 .testimonial-header {
@@ -267,10 +267,10 @@ img {
   letter-spacing: 0.03em;
 }
 
-.testimonial-badge--retire { background: rgba(232,133,108,0.15); color: #e8856c; }
-.testimonial-badge--learn  { background: rgba(92,201,167,0.15); color: #5cc9a7; }
-.testimonial-badge--career { background: rgba(107,163,232,0.15); color: #6ba3e8; }
-.testimonial-badge--skill  { background: rgba(176,124,232,0.15); color: #b07ce8; }
+.testimonial-badge--retire { background: #fce8e3; color: #c96a52; }
+.testimonial-badge--learn  { background: #e0f5ef; color: #3a9e7e; }
+.testimonial-badge--career { background: #e3edfb; color: #4a7abf; }
+.testimonial-badge--skill  { background: #ece3f7; color: #7e5aad; }
 
 .testimonial-stars {
   font-size: 18px;
@@ -279,26 +279,26 @@ img {
 }
 
 .testimonial-star--empty {
-  color: #555;
+  color: #ddd;
 }
 
 .testimonial-meta {
   font-size: 13px;
-  color: #888;
+  color: #aaa;
   margin-bottom: 10px;
 }
 
 .testimonial-title {
   font-size: 16px;
   font-weight: 700;
-  color: #eee;
+  color: #3a3a3a;
   margin-bottom: 10px;
   line-height: 1.6;
 }
 
 .testimonial-body {
   font-size: 14px;
-  color: #aaa;
+  color: #666;
   line-height: 1.95;
 }
 
@@ -315,15 +315,15 @@ img {
 /* ========================
    Section 4-7: Detail sections
    ======================== */
-.bg-dark1 { background: #222; }
-.bg-dark2 { background: #1a1a1a; }
-.bg-dark3 { background: #252525; }
+.bg-dark1 { background: #ece3d5; }
+.bg-dark2 { background: #f5efe8; }
+.bg-dark3 { background: #e4d8c8; }
 
 /* ========================
    Section 8: Flow
    ======================== */
 .flow {
-  background: #222;
+  background: #e4d8c8;
 }
 
 .steps {
@@ -350,7 +350,7 @@ img {
   top: 48px;
   bottom: 0;
   width: 2px;
-  border-left: 2px dashed #555;
+  border-left: 2px dashed #c8b9a8;
 }
 
 .step-number {
@@ -384,12 +384,12 @@ img {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 2px;
-  color: #eee;
+  color: #3a3a3a;
 }
 
 .step-desc {
   font-size: 14px;
-  color: #999;
+  color: #888;
   line-height: 1.8;
 }
 
@@ -397,7 +397,7 @@ img {
    Section 9: Final CTA
    ======================== */
 .final-cta {
-  background: linear-gradient(180deg, #1a1a1a 0%, #252525 100%);
+  background: linear-gradient(180deg, #f5efe8 0%, #ece3d5 100%);
   text-align: center;
 }
 
@@ -405,7 +405,7 @@ img {
   text-align: center;
   font-size: 19px;
   font-weight: 700;
-  color: #eee;
+  color: #3a3a3a;
   margin-bottom: 36px;
   line-height: 1.9;
 }
@@ -424,7 +424,7 @@ img {
 .final-note {
   text-align: center;
   font-size: 13px;
-  color: #777;
+  color: #aaa;
   margin-top: 20px;
 }
 
@@ -432,7 +432,7 @@ img {
    Letter / Founder Message
    ======================== */
 .letter {
-  background: #1a1a1a;
+  background: #ece3d5;
 }
 
 .letter-inner {
@@ -441,7 +441,7 @@ img {
   background: #fdfaf6;
   border-radius: 4px;
   padding: 56px 40px 48px;
-  box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.08);
   position: relative;
   background-image:
     repeating-linear-gradient(
@@ -554,8 +554,8 @@ img {
    Footer
    ======================== */
 .footer {
-  background: #111;
-  color: #888;
+  background: #3a352f;
+  color: #bbb;
   text-align: center;
   padding: 48px 20px;
 }
@@ -570,7 +570,7 @@ img {
 
 .footer-copy {
   font-size: 12px;
-  color: #666;
+  color: #999;
 }
 
 /* ========================
