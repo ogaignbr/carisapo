@@ -953,6 +953,256 @@ img {
   }
 }
 
+/* ========================
+   Sticky LINE Button
+   ======================== */
+.sticky-line {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #06C755;
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 24px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 4px 20px rgba(6,199,85,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: stickyPulse 2s ease-in-out infinite;
+}
+
+.sticky-line:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 30px rgba(6,199,85,0.5);
+  animation-play-state: paused;
+}
+
+.sticky-line svg {
+  flex-shrink: 0;
+}
+
+@keyframes stickyPulse {
+  0%, 100% { box-shadow: 0 4px 20px rgba(6,199,85,0.4); }
+  50% { box-shadow: 0 4px 30px rgba(6,199,85,0.65); }
+}
+
+@media (max-width: 599px) {
+  .sticky-line {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 0;
+    justify-content: center;
+    padding: 16px 20px;
+    font-size: 15px;
+  }
+
+  body {
+    padding-bottom: 56px;
+  }
+}
+
+/* ========================
+   LINE CTA Button (green)
+   ======================== */
+.cta-btn-line {
+  display: block;
+  width: fit-content;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  background: #06C755;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.04em;
+  box-shadow: 0 6px 24px rgba(6,199,85,0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  animation: lineBreathe 2.3s ease-in-out infinite;
+}
+
+.cta-btn-line::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 40%;
+  height: 200%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.6s ease;
+}
+
+.cta-btn-line:hover::before {
+  left: 120%;
+}
+
+.cta-btn-line:hover {
+  animation-play-state: paused;
+  transform: translateY(-5px) scale(1.08);
+  box-shadow: 0 14px 40px rgba(6,199,85,0.45);
+  background: #05b34c;
+}
+
+@keyframes lineBreathe {
+  0%, 100% { transform: scale(1); box-shadow: 0 6px 22px rgba(6,199,85,0.35); }
+  50% { transform: scale(1.06); box-shadow: 0 14px 42px rgba(6,199,85,0.5); }
+}
+
+.cta-btn-line-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* ========================
+   Hero Number Highlight
+   ======================== */
+.hero-number {
+  font-size: 15px;
+  color: #5a7a8a;
+  margin-bottom: 24px;
+  animation: fadeUp 0.8s 0.2s cubic-bezier(.25,.8,.25,1) both;
+}
+
+.hero-number-amount {
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+  color: #1a788c;
+  line-height: 1.3;
+  margin-top: 4px;
+}
+
+.hero-number-amount small {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* ========================
+   Bonus / Incentive
+   ======================== */
+.bonus-banner {
+  background: linear-gradient(135deg, #fff7e6, #fff1cc);
+  border: 2px solid #f0c040;
+  border-radius: 16px;
+  padding: 24px 20px;
+  text-align: center;
+  margin-top: 28px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bonus-label {
+  display: inline-block;
+  background: #f0c040;
+  color: #7a5500;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 14px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.bonus-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #7a5500;
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+.bonus-desc {
+  font-size: 13px;
+  color: #9a7a3a;
+  line-height: 1.7;
+}
+
+/* ========================
+   FAQ Accordion
+   ======================== */
+.faq {
+  background: #edf7f5;
+}
+
+.faq-list {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #d5e8e4;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 18px 48px 18px 20px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a5276;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  font-family: inherit;
+  line-height: 1.6;
+}
+
+.faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  font-weight: 400;
+  color: #1a788c;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.is-open .faq-question::after {
+  content: "−";
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  padding: 0 20px;
+}
+
+.faq-item.is-open .faq-answer {
+  max-height: 400px;
+  padding: 0 20px 18px;
+}
+
+.faq-answer p {
+  font-size: 14px;
+  color: #4a5a6a;
+  line-height: 1.9;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .cta-btn,
   .hero .cta-btn,
@@ -969,7 +1219,8 @@ img {
   <div class="section-inner">
     <img src="1.jpg" alt="キャリサポ メインビジュアル" class="hero-img">
     <p class="hero-subtitle">あなたの<span class="hl">これから</span>に寄り添う。</p>
-    <a href="https://lin.ee/tpWHOuh" target="_blank" rel="noopener noreferrer" class="cta-btn">まずは無料で相談する</a>
+    <p class="hero-number">キャリサポ利用で最大<span class="hero-number-amount">+473.6<small>万円相当</small></span></p>
+    <a href="https://lin.ee/tpWHOuh" target="_blank" rel="noopener noreferrer" class="cta-btn-line"><span class="cta-btn-line-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M12 1c-6.627 0-12 4.975-12 11.111 0 5.491 4.874 10.093 11.452 10.962.446.096 1.051.296 1.203.679.137.346.09.889.045 1.24l-.193 1.167c-.059.348-.271 1.36 1.193.742 1.465-.619 7.896-4.649 10.776-7.96C21.945 16.283 24 13.942 24 12.111 24 5.975 18.627 1 12 1"/></svg></span>公式LINEで無料相談する</a>
   </div>
 </section>
 
@@ -1186,6 +1437,51 @@ img {
   </div>
 </section>
 
+<!-- FAQ -->
+<section class="section faq">
+  <div class="section-inner">
+    <h2 class="section-heading fade-in">よくある質問</h2>
+    <div class="faq-list">
+
+      <div class="faq-item fade-in">
+        <button class="faq-question">Q. 相談は本当に無料ですか？</button>
+        <div class="faq-answer"><p>はい、ご相談は完全無料です。LINEでお気軽にご連絡ください。現在の状況やお悩みをお聞きした上で、最適なサポートプランをご提案いたします。無理な勧誘は一切ございません。</p></div>
+      </div>
+
+      <div class="faq-item fade-in">
+        <button class="faq-question">Q. 退職サポートではどのくらい受け取れますか？</button>
+        <div class="faq-answer"><p>雇用保険の加入期間などにより異なりますが、毎月約16万円を18ヶ月間、合計で約290万円を受給された方もいらっしゃいます。あなたの場合にどのくらい受け取れるか、LINEでお調べいたします。</p></div>
+      </div>
+
+      <div class="faq-item fade-in">
+        <button class="faq-question">Q. 今すぐ退職する予定はなくても相談できますか？</button>
+        <div class="faq-answer"><p>もちろんです。「いつか辞めたいけど今は決められない」「まずは情報を知りたい」という方も多くいらっしゃいます。事前に知っておくことで、いざという時にスムーズに動けます。</p></div>
+      </div>
+
+      <div class="faq-item fade-in">
+        <button class="faq-question">Q. 毎月3万円もらいながら学べるとはどういう仕組みですか？</button>
+        <div class="faq-answer"><p>国の就労支援制度を活用することで、条件を満たした方は学習期間中に毎月の支援金を受け取ることができます。対象確認から申請手続きまでキャリサポが一貫してサポートします。</p></div>
+      </div>
+
+      <div class="faq-item fade-in">
+        <button class="faq-question">Q. 講座費用が実質0円というのは本当ですか？</button>
+        <div class="faq-answer"><p>はい。経済産業省認定のリスキリング講座には国の補助金制度が適用されるため、条件を満たした方は通常48万円の講座を実質0円で受講できます。補助金の申請もサポートいたします。</p></div>
+      </div>
+
+      <div class="faq-item fade-in">
+        <button class="faq-question">Q. 地方在住でもサポートを受けられますか？</button>
+        <div class="faq-answer"><p>はい、LINEやオンラインでのやり取りが中心ですので、全国どこからでもサポートをお受けいただけます。面談もオンラインで対応しております。</p></div>
+      </div>
+
+      <div class="faq-item fade-in">
+        <button class="faq-question">Q. 4つのサポートのうち、1つだけ利用できますか？</button>
+        <div class="faq-answer"><p>はい、必要なサポートだけをお選びいただけます。ただし、4つを組み合わせてご利用いただくことで総合的なメリットが大きくなるケースが多いです。まずはご相談ください。</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- Founder Letter -->
 <section class="section letter">
   <div class="section-inner">
@@ -1241,7 +1537,12 @@ img {
   <div class="section-inner">
     <img src="9.jpg" alt="キャリサポで新しい一歩を" class="section-img fade-in-scale">
     <p class="final-cta-copy fade-in">あなたの次のステージへ、<br>一歩踏み出しませんか？</p>
-    <a href="https://lin.ee/tpWHOuh" target="_blank" rel="noopener noreferrer" class="cta-btn">無料相談に申し込む</a>
+    <a href="https://lin.ee/tpWHOuh" target="_blank" rel="noopener noreferrer" class="cta-btn-line"><span class="cta-btn-line-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M12 1c-6.627 0-12 4.975-12 11.111 0 5.491 4.874 10.093 11.452 10.962.446.096 1.051.296 1.203.679.137.346.09.889.045 1.24l-.193 1.167c-.059.348-.271 1.36 1.193.742 1.465-.619 7.896-4.649 10.776-7.96C21.945 16.283 24 13.942 24 12.111 24 5.975 18.627 1 12 1"/></svg></span>公式LINEで特典を受け取る</a>
+    <div class="bonus-banner fade-in delay-2">
+      <span class="bonus-label">LINE登録特典</span>
+      <p class="bonus-title">失業給付金一括<br>100万円受給手順書プレゼント</p>
+      <p class="bonus-desc">公式LINEに登録するだけで、<br>すぐに受け取れます。</p>
+    </div>
     <p class="final-note fade-in delay-3">※相談は完全無料です。お気軽にお問い合わせください。</p>
   </div>
 </section>
@@ -1251,6 +1552,12 @@ img {
   <div class="footer-logo">キャリサポ</div>
   <p class="footer-copy">&copy; 2025 キャリサポ All rights reserved.</p>
 </footer>
+
+<!-- Sticky LINE Button -->
+<a href="https://lin.ee/tpWHOuh" target="_blank" rel="noopener noreferrer" class="sticky-line">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M12 1c-6.627 0-12 4.975-12 11.111 0 5.491 4.874 10.093 11.452 10.962.446.096 1.051.296 1.203.679.137.346.09.889.045 1.24l-.193 1.167c-.059.348-.271 1.36 1.193.742 1.465-.619 7.896-4.649 10.776-7.96C21.945 16.283 24 13.942 24 12.111 24 5.975 18.627 1 12 1"/></svg>
+  LINEで無料相談
+</a>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -1264,6 +1571,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
   targets.forEach(function (el) { observer.observe(el); });
+
+  document.querySelectorAll('.faq-question').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var item = this.parentElement;
+      var wasOpen = item.classList.contains('is-open');
+      document.querySelectorAll('.faq-item.is-open').forEach(function (el) {
+        el.classList.remove('is-open');
+      });
+      if (!wasOpen) item.classList.add('is-open');
+    });
+  });
 });
 </script>
 </body>
